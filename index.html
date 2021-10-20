@@ -20,16 +20,6 @@
          <button form="input" type="button" onclick="nginput(4)">4</button><button form="input" type="button" onclick="nginput(5)">5</button><button form="input" type="button" onclick="nginput(6)">6</button>
         </form>
      </center>
-     <script>
-     function nginput(value){
-     document.getElementById("numberinput").value = (document.getElementById("numberinput").value || null) + value
-     return 0
-     }
-     function calculate(){
-       let str = document.getElementById("numberinput").value.toString()
-       str = str.toLowerCase().replace(/x/g,'*').replace(/\:/g,'/')
-       document.getElementById("numberinput").value = eval(str)
-     }
-     </script>
+     <script src="./script.js"/>
   </body>
 </html>
