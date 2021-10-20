@@ -12,15 +12,21 @@
   <body>
     <center>
     <form id="input">
-      <input id="numberinput" placeholder="Ketik Nomor" type="number">
+      <input id="numberinput" placeholder="Ketik Nomor">
+       <button form="input" type="button" onclick="calculate()">itung</button>
     </form>
         <button form="input" type="reset">C</button>
-        <button form="input" type="button" onclick="nginput(7)">tes</button>
+        <button form="input" onclick="nginput(7)">tes</button>
      </center>
      <script>
      function nginput(value){
-       document.getElementById("numberinput").value = value
-       }
-       </script>
+     document.getElementById("numberinput").value = value
+     }
+     function calculate(){
+       let str = document.getElementById("numberinput").value.toString()
+       str = str.toLowerCase().replace(/x/g,'*').replace(/\:/g,'/')
+       document.getElementById("numberinput").value = eval(str)
+     }
+     </script>
   </body>
 </html>
