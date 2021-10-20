@@ -12,7 +12,7 @@
   <body>
     <center>
     <form id="input">
-      <input value="0" id="numberinput" placeholder="Ketik Nomor">
+      <input id="numberinput" placeholder="Ketik Nomor">
        <button form="input" type="button" onclick="calculate()">itung</button>
     </form>
         <button form="input" type="reset">C</button>
@@ -20,7 +20,7 @@
      </center>
      <script>
      function nginput(value){
-     document.getElementById("numberinput").value = document.getElementById("numberinput").value+value
+     console.log(document.getElementById("numberinput"))
      }
      function calculate(){
        let str = document.getElementById("numberinput").value.toString()
