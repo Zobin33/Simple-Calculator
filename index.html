@@ -16,11 +16,11 @@
        <button form="input" type="button" onclick="calculate()">itung</button>
     </form>
         <button form="input" type="reset">C</button>
-        <button form="input" onclick="nginput(7)">tes</button>
+        <button form="input" onclick="nginput(7)">7</button><button form="input" onclick="nginput(8)">8</button><button form="input" onclick="nginput(9)">9</button>
      </center>
      <script>
      function nginput(value){
-     document.getElementById("numberinput").value = value
+     document.getElementById("numberinput").value = document.getElementById("numberinput").value?document.getElementById("numberinput").value.toString()+value:value
      }
      function calculate(){
        let str = document.getElementById("numberinput").value.toString()
