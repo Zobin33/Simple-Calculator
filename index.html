@@ -11,10 +11,16 @@
   </head>
   <body>
     <center>
-    <form id="input" method="post" action="./index.html">
-      <input placeholder="Ketik Nomor" type="number">
+    <form id="input">
+      <input id="numberinput" placeholder="Ketik Nomor" type="number">
     </form>
         <button form="input" type="reset">C</button>
+        <button form="input" type="button" onclick="nginput(7)">tes</button>
      </center>
+     <script>
+     function nginput(value){
+       document.getElementById("numberinput").value = value
+       }
+       </script>
   </body>
 </html>
