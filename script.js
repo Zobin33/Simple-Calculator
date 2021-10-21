@@ -99,6 +99,7 @@ function input(r) {
       (cnScreenV = cnCalcFinal(0));
   }
 }
+
 function cnCalcFinal(r) {
   var c = cnCombineNumbers(),
     e = [],
@@ -942,6 +943,7 @@ function cnFmt(r) {
     return c;
   }
 }
+var r = input
 document.onkeydown = function (c) {
   106 == c.keyCode || (c.shiftKey && 56 == c.keyCode)
     ? r('*')
