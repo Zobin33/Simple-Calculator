@@ -8,24 +8,23 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
   <script src="./script.js"></script>
   <title>Simple Calculator</title>
-  <h1>Ini Header</h1>
 </head>
 <body>
   <center>
-    <p id="before-result"></p>
-    <h4 id="input-bang">
+    <br>
+    <h2 id="before-result">  </h2>
+    <h1 id="input-bang">
       Masukan Nomor
-    </h4>
-    <button type="button" onclick="result()">itung</button>
+    </h1>
+    <button type="button" class="input-button" onclick="reset()">C</button><button type="button" class="input-button" onclick="delete_input()">&#9003</button><button type="button" class="input-button" onclick="input(' % ')">%</button><button type="button" class="input-button" onclick="input(' ÷ ')">÷</button>
     <br>
-    <button type="button" onclick="reset()">C</button>
-    <button type="button" onclick="input('+')">+</button>
+    <button type="button" class="input-button" onclick="input(7)">7</button><button type="button" class="input-button" onclick="input(8)">8</button><button type="button" class="input-button" onclick="input(9)">9</button><button type="button" class="input-button" onclick="input(' × ')">×</button>
     <br>
-    <button type="button" onclick="input(7)">7</button><button type="button" onclick="input(8)">8</button><button type="button" onclick="input(9)">9</button>
+    <button type="button" class="input-button" onclick="input(4)">4</button><button type="button" class="input-button" onclick="input(5)">5</button><button type="button" class="input-button" onclick="input(6)">6</button><button type="button" class="input-button" onclick="input(' - ')">-</button>
     <br>
-    <button type="button" onclick="input(4)">4</button><button type="button" onclick="input(5)">5</button><button type="button" onclick="input(6)">6</button>
+    <button type="button" class="input-button" onclick="input(3)">3</button><button type="button" class="input-button" onclick="input(2)">2</button><button type="button" class="input-button" onclick="input(1)">1</button><button type="button" class="input-button" onclick="input(' + ')">+</button>
     <br>
-    <button type="button" onclick="input(3)">3</button><button type="button" onclick="input(2)">2</button><button type="button" onclick="input(1)">1</button>
+    <button type="button" class="input-button">&#8997</button><button type="button" class="input-button" onclick="input(0)">0</button><button type="button" class="input-button" onclick="input(',')">,</button><button type="button" class="result-button" onclick="result()">=</button>
   </center>
 </body>
 </html>
