@@ -6,8 +6,9 @@ function input(value) {
     "%"]
   let input_value = document.getElementById("input-bang").innerHTML.replace("Masukan Nomor", '')
   let result;
-  if (operator.includes(input_value[input_value.length-2]) && operator.includes(value.slice(1, 2))) {
-    result = input_value.slice(0, input_value.length-3) + value
+  if (operator.includes(input_value[input_value.length-2]) && operator.includes(value.toString().slice(1, 2))) {
+    result = input_value.slice(0,
+      input_value.length-3) + value
   } else {
     result = input_value + value
   }
